@@ -1,0 +1,41 @@
+{
+  "object" : {
+    "artifacts" : [
+
+    ],
+    "dependencies" : [
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "flutterframework",
+          "kind" : "fileSystem",
+          "location" : "/Users/manuel/Desktop/ENGAGEMENT/tao/macos/Flutter/ephemeral/Packages/.packages/FlutterFramework",
+          "name" : "FlutterFramework"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/manuel/Desktop/ENGAGEMENT/tao/macos/Flutter/ephemeral/Packages/.packages/FlutterFramework"
+        },
+        "subpath" : "flutterframework"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "url_launcher_macos-3.2.5",
+          "kind" : "fileSystem",
+          "location" : "/Users/manuel/Desktop/ENGAGEMENT/tao/macos/Flutter/ephemeral/Packages/.packages/url_launcher_macos-3.2.5",
+          "name" : "url_launcher_macos"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/manuel/Desktop/ENGAGEMENT/tao/macos/Flutter/ephemeral/Packages/.packages/url_launcher_macos-3.2.5"
+        },
+        "subpath" : "url_launcher_macos-3.2.5"
+      }
+    ],
+    "prebuilts" : [
+
+    ]
+  },
+  "version" : 7
+}
