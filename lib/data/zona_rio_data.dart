@@ -137,7 +137,7 @@ final tratamientosZonaRio = [
         "• Alivio de dolores musculares y articulares \n• Mejora de la movilidad y flexibilidad \n• Rehabilitación post-lesión \n• Prevención de futuras lesiones",
 
     pagos:
-        "• Paquete de 3 sesiones — \$2100 \nDuración: 30 minutos"
+        "• Paquete de 3 sesiones — \$2100"
   ),
   Tratamiento//8
   (
