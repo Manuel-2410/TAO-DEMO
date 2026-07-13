@@ -2,10 +2,10 @@ import '../models/tratamiento.dart';
 
 final tratamientosZonaRio = [
 
-  Tratamiento//1
+    Tratamiento//1
   (
     titulo:
-        "Tratamiento de Acupuntura (Fase 1)",
+        "Tratamiento de Acupuntura y electroacupuntura",
 
     icono:
         "assets/images/acupuntura2.png",
@@ -14,10 +14,10 @@ final tratamientosZonaRio = [
         "Sesiones basado en diagnóstico clínico y plan terapéutico. La primera sesión incluye diagnóstico (90 min) y las subsecuentes duran 60 min. Esta fase prepara el cuerpo para etapas posteriores de fortalecimiento.",
 
     beneficios:
-        "• Diagnóstico clínico \n• 5 sesiones de acupuntura \n• Diagnóstico nutricional \n• Masaje relajante de 20 min",
+        "•Reduce el dolor y mejora el bienestar. \n•Relaja los músculos y disminuye la tensión. \n• Disminuye la inflamación y favorece la recuperación. \n•Apoya el sistema inmunológico fortaleciendo defensas naturales. \n•Complementa otros tratamientos médicos y fisioterapéuticos. \n•Reduce el estrés y la ansiedad. \n•Favorece el sueño y la relajación profunda. \n•Estimula y fortalece nervios, músculos y tendones.",
 
     pagos:
-        "• Sesión individual + diagnóstico: \$1650 MXN \n• 3 sesiones (Diagnóstico): \$2900 MXN \n• Pago de contado = \$2750 MXN \n• Pago fraccionado = (1ra sesión = \$1450 MXN)(2da sesión = \$1450 MXN) \nDuración: 60 minutos"
+        "•3 Sesiones de acupuntura: \$2,900 \n Pago de contado = \$2,750 MXN \nPago fraccionado = (1ra y 2da sesión = \$1450 MXN c/u)"
   ),
 
   Tratamiento//2

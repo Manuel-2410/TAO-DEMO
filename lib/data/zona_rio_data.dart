@@ -5,7 +5,7 @@ final tratamientosZonaRio = [
   Tratamiento//1
   (
     titulo:
-        "Tratamiento de Acupuntura (Fase 1)",
+        "Tratamiento de Acupuntura y electroacupuntura",
 
     icono:
         "assets/images/acupuntura2.png",
@@ -14,10 +14,27 @@ final tratamientosZonaRio = [
         "Sesiones basado en diagnóstico clínico y plan terapéutico. La primera sesión incluye diagnóstico (90 min) y las subsecuentes duran 60 min. Esta fase prepara el cuerpo para etapas posteriores de fortalecimiento.",
 
     beneficios:
-        "• Diagnóstico clínico \n• 5 sesiones de acupuntura \n• Diagnóstico nutricional \n• Masaje relajante de 20 min",
+        "•Reduce el dolor y mejora el bienestar. \n•Relaja los músculos y disminuye la tensión. \n• Disminuye la inflamación y favorece la recuperación. \n•Apoya el sistema inmunológico fortaleciendo defensas naturales. \n•Complementa otros tratamientos médicos y fisioterapéuticos. \n•Reduce el estrés y la ansiedad. \n•Favorece el sueño y la relajación profunda. \n•Estimula y fortalece nervios, músculos y tendones.",
 
     pagos:
-        "• Sesión individual + diagnóstico: \$1650 MXN \n• Tratamiento completo: \$5050 MXN \n• Pago de contado = \$4750 MXN \n• Pago fraccionado = (1ra sesión = \$2050 MXN) / (2da y 3ra sesión = \$1500 MXN c/u) \nDuración: 60 minutos"
+        "•5 sesiones de acupuntura: \$5,050 MXN \n    Pago de contado = \$4,750 MXN \n   Pago fraccionado = (1ra sesión = \$2,050 MXN) / (2da y 3ra sesión = \$1,500 MXN c/u)"
+  ),
+  Tratamiento//Completa
+  (
+    titulo:
+        "Tratamiento de Acupuntura y electroacupuntura convenio",
+
+    icono:
+        "assets/images/acupuntura2.png",
+
+    descripcion:
+        "Sesiones basado en diagnóstico clínico y plan terapéutico. La primera sesión incluye diagnóstico (90 min) y las subsecuentes duran 60 min. Esta fase prepara el cuerpo para etapas posteriores de fortalecimiento.",
+
+    beneficios:
+        "•Reduce el dolor y mejora el bienestar. \n•Relaja los músculos y disminuye la tensión. \n• Disminuye la inflamación y favorece la recuperación. \n•Apoya el sistema inmunológico fortaleciendo defensas naturales. \n•Complementa otros tratamientos médicos y fisioterapéuticos. \n•Reduce el estrés y la ansiedad. \n•Favorece el sueño y la relajación profunda. \n•Estimula y fortalece nervios, músculos y tendones.",
+
+    pagos:
+        " •Sesión individual: \$1,650 MXN \n•3 Sesiones de acupuntura:\$2,900 MXN \n•5 sesiones de acupuntura: \$5,050 MXN \n    Pago de contado = \$4,750 MXN \n   Pago fraccionado = (1ra sesión = \$2,050 MXN) / (2da y 3ra sesión = \$1,500 MXN c/u)"
   ),
 
   Tratamiento//2
@@ -139,55 +156,5 @@ final tratamientosZonaRio = [
     pagos:
         "Conoterapia\n • 1 oído + Diagnóstico = \$600 MXN • 2 oídos + Diagnóstico = \$700 MXN\n Auriculoterapia\n • 1 oído + Diagnóstico = \$700 MXN",
   ),
-  Tratamiento//5 y 10
-  (
-    titulo:
-        "Tratamiento de Acupuntura y electroacupuntura",
-
-    icono:
-        "assets/images/acupuntura2.png",
-
-    descripcion:
-        "Sesiones basado en diagnóstico clínico y plan terapéutico. La primera sesión incluye diagnóstico (90 min) y las subsecuentes duran 60 min. Esta fase prepara el cuerpo para etapas posteriores de fortalecimiento.",
-
-    beneficios:
-        "•Reduce el dolor y mejora el bienestar. \n•Relaja los músculos y disminuye la tensión. \n• Disminuye la inflamación y favorece la recuperación. \n•Apoya el sistema inmunológico fortaleciendo defensas naturales. \n•Complementa otros tratamientos médicos y fisioterapéuticos. \n•Reduce el estrés y la ansiedad. \n•Favorece el sueño y la relajación profunda. \n•Estimula y fortalece nervios, músculos y tendones.",
-
-    pagos:
-        "•3 Sesiones de acupuntura: \$2,900 \n Pago de contado = \$2,750 MXN \nPago fraccionado = (1ra y 2da sesión = \$1450 MXN c/u)"
-  ),
-  Tratamiento//prueba RIO
-  (
-    titulo:
-        "Tratamiento de Acupuntura y electroacupuntura",
-
-    icono:
-        "assets/images/acupuntura2.png",
-
-    descripcion:
-        "Sesiones basado en diagnóstico clínico y plan terapéutico. La primera sesión incluye diagnóstico (90 min) y las subsecuentes duran 60 min. Esta fase prepara el cuerpo para etapas posteriores de fortalecimiento.",
-
-    beneficios:
-        "•Reduce el dolor y mejora el bienestar. \n•Relaja los músculos y disminuye la tensión. \n• Disminuye la inflamación y favorece la recuperación. \n•Apoya el sistema inmunológico fortaleciendo defensas naturales. \n•Complementa otros tratamientos médicos y fisioterapéuticos. \n•Reduce el estrés y la ansiedad. \n•Favorece el sueño y la relajación profunda. \n•Estimula y fortalece nervios, músculos y tendones.",
-
-    pagos:
-        "•5 sesiones de acupuntura: \$5,050 MXN \n    Pago de contado = \$4,750 MXN \n   Pago fraccionado = (1ra sesión = \$2,050 MXN) / (2da y 3ra sesión = \$1,500 MXN c/u)"
-  ),
-  Tratamiento//Completa
-  (
-    titulo:
-        "Tratamiento de Acupuntura y electroacupuntura",
-
-    icono:
-        "assets/images/acupuntura2.png",
-
-    descripcion:
-        "Sesiones basado en diagnóstico clínico y plan terapéutico. La primera sesión incluye diagnóstico (90 min) y las subsecuentes duran 60 min. Esta fase prepara el cuerpo para etapas posteriores de fortalecimiento.",
-
-    beneficios:
-        "•Reduce el dolor y mejora el bienestar. \n•Relaja los músculos y disminuye la tensión. \n• Disminuye la inflamación y favorece la recuperación. \n•Apoya el sistema inmunológico fortaleciendo defensas naturales. \n•Complementa otros tratamientos médicos y fisioterapéuticos. \n•Reduce el estrés y la ansiedad. \n•Favorece el sueño y la relajación profunda. \n•Estimula y fortalece nervios, músculos y tendones.",
-
-    pagos:
-        " •Sesión individual: \$1,650 MXN \n•3 Sesiones de acupuntura:\$2,900 MXN \n•5 sesiones de acupuntura: \$5,050 MXN \n    Pago de contado = \$4,750 MXN \n   Pago fraccionado = (1ra sesión = \$2,050 MXN) / (2da y 3ra sesión = \$1,500 MXN c/u)"
-  ),
+  
 ];

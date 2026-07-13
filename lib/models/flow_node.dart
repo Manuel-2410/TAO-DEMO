@@ -18,6 +18,7 @@ class FlowNode {
   final FlowNodeType tipo;
   final Color color;
   final bool mostrarReferencia;
+  final String? referenciaImagen;
 
   FlowNode({
     required this.id,
@@ -33,6 +34,7 @@ class FlowNode {
     this.elementos = const [],
     this.leyenda = const [],
     this.mostrarReferencia = true,
+    this.referenciaImagen,
   });
 }
 

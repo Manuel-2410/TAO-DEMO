@@ -4,9 +4,9 @@ final sintomas = [
 
   Sintoma//1
   (
-    nombre: "Digestivo",
+    nombre: "Dolor estomacal",
 
-    categoria: "Dolor",
+    categoria: "Digestivo",
 
     imagen:
         "assets/images/digestivo.png",
@@ -77,7 +77,7 @@ final sintomas = [
   (
     nombre:"Paralisis Facial o Bell",
     
-    categoria:"Estético",
+    categoria:"Neurológico",
     imagen:"assets/images/paralisis.jpeg",
     descripcion:"Pérdida de movimiento en un lado del rostro.",
 
@@ -90,7 +90,7 @@ final sintomas = [
   Sintoma
   (
     nombre:"Fertilidad",
-    categoria:"Estético",
+    categoria:"Reproductiva",
     imagen:"assets/images/fertilidad.jpeg",
     descripcion:"Dificultad para concebir o mantener un embarazo.",
 
@@ -103,7 +103,7 @@ final sintomas = [
   Sintoma
    (
     nombre:"Gastritis",
-    categoria:"Digestiva",
+    categoria:"Digestivo",
     imagen:"assets/images/gastritis.jpeg",
     descripcion:"Inflamación del revestimiento del estómago, causando dolor y molestias.",
     comoayuda:"La acupuntura ayudara a reducir la inflamación del estómago, aliviar el dolor y la acidez, y regular la digestión, favoreciendo un mayor bienestar en casos de gastritis.",
@@ -116,7 +116,7 @@ final sintomas = [
   Sintoma
   (
     nombre:"Colitis",
-    categoria:"Digestiva",
+    categoria:"Digestivo",
     imagen:"assets/images/colitis.jpeg",
     descripcion:"Inflamación del revestimiento del intestino, causando dolor abdominal, diarrea e inflamación.",
     comoayuda:"La acupuntura ayudara a disminuir la inflamación intestinal, regular el tránsito digestivo y aliviar el dolor abdominal, favoreciendo una mejor digestión y mayor bienestar en casos de colitis.",
@@ -140,7 +140,7 @@ final sintomas = [
   Sintoma
   (
   nombre:"Insomnio",
-  categoria:"Sueño",
+  categoria:"Clínico",
   imagen:"assets/images/insomnio.jpeg",
   descripcion:"Dificultad para conciliar o mantener el sueño, afectando la energía y el bienestar.",
   comoayuda:"La acupuntura ayudaraa relajar el sistema nervioso, disminuir el estrés y equilibrar la energía del cuerpo, favoreciendo un sueño más profundo y reparador en casos de insomnio.",
@@ -153,7 +153,7 @@ final sintomas = [
   Sintoma
   (
   nombre:"Ansiedad",
-  categoria:"Estrés",
+  categoria:"Emocional",
   imagen:"assets/images/ansiedad.jpeg",
   descripcion:"Sensación de tensión, preocupación o miedo que afecta el bienestar emocional.",
   comoayuda:"La acupuntura ayudara a relajar el sistema nervioso, disminuir la tensión y equilibrar la energía del cuerpo, lo que reduce la ansiedad y el estrés y favorece una sensación de calma y bienestar.",
@@ -165,7 +165,7 @@ final sintomas = [
   Sintoma
   (
   nombre:"Emociones",
-  categoria:"Estrés",
+  categoria:"Emocional",
   imagen:"assets/images/acuemocional.png",
   descripcion:"Cambios en el estado de ánimo o dificultad para manejar las emociones.",
   comoayuda:"La acupuntura ayudara a equilibrar el sistema nervioso, reducir la tensión y favorecer la calma interior, lo que contribuye a manejar mejor las emociones y recuperar el bienestar emocional.",
@@ -174,40 +174,52 @@ final sintomas = [
   implicacion:"¿Qué impacto tendría seguir con estos niveles de ansiedad o tristeza en su salud física y emocional a largo plazo? \n¿Cómo afectan estos problemas a sus relaciones personales o desempeño laboral? \n¿Ha considerado que la falta de control puede aumentar el riesgo de otros problemas como insomnio, gastritis o hipertensión?",
   necesidad:"¿Le interesaría un enfoque complementario que ayude a relajar el sistema nervioso y equilibrar las emociones de manera natural? \n¿Qué valor tendría para usted recuperar calma, motivación y energía sin efectos secundarios significativos? \n¿Le gustaría explorar cómo la acupuntura puede apoyar la reducción del estrés y favorecer un estado de bienestar integral?",
   ),
-  Sintoma
-  (
-  nombre:"Fasiitis Plantar",//arreglar
-  categoria:"Estrés",
-  imagen:"assets/images/controlpeso.jpeg",
-  descripcion:"Cambios en el estado de ánimo o dificultad para manejar las emociones.",
-  comoayuda:"La acupuntura ayudara a equilibrar el sistema nervioso, reducir la tensión y favorecer la calma interior, lo que contribuye a manejar mejor las emociones y recuperar el bienestar emocional.",
-  situacion:"¿Desde cuándo siente cambios en su estado de ánimo o dificultad para manejar las emociones? \n¿Ha probado algún tratamiento médico, terapia o técnicas de relajación? \n¿En qué momentos del día o situaciones nota más intensos los síntomas emocionales?",
-  problema:"¿Ha notado que estos problemas emocionales afectan su concentración, sueño o energía diaria? \n¿Le resulta difícil controlar pensamientos negativos o la sensación de tensión constante? \n¿Siente que los métodos que ha probado no le han dado un alivio suficiente?",
-  implicacion:"¿Qué impacto tendría seguir con estos niveles de ansiedad o tristeza en su salud física y emocional a largo plazo? \n¿Cómo afectan estos problemas a sus relaciones personales o desempeño laboral? \n¿Ha considerado que la falta de control puede aumentar el riesgo de otros problemas como insomnio, gastritis o hipertensión?",
-  necesidad:"¿Le interesaría un enfoque complementario que ayude a relajar el sistema nervioso y equilibrar las emociones de manera natural? \n¿Qué valor tendría para usted recuperar calma, motivación y energía sin efectos secundarios significativos? \n¿Le gustaría explorar cómo la acupuntura puede apoyar la reducción del estrés y favorecer un estado de bienestar integral?",
-  ),
-  Sintoma//arreglar
-  (
-  nombre:"Migraña",
-  categoria:"Estrés",
-  imagen:"assets/images/controlpeso.jpeg",
-  descripcion:"Cambios en el estado de ánimo o dificultad para manejar las emociones.",
-  comoayuda:"La acupuntura ayudara a equilibrar el sistema nervioso, reducir la tensión y favorecer la calma interior, lo que contribuye a manejar mejor las emociones y recuperar el bienestar emocional.",
-  situacion:"¿Desde cuándo siente cambios en su estado de ánimo o dificultad para manejar las emociones? \n¿Ha probado algún tratamiento médico, terapia o técnicas de relajación? \n¿En qué momentos del día o situaciones nota más intensos los síntomas emocionales?",
-  problema:"¿Ha notado que estos problemas emocionales afectan su concentración, sueño o energía diaria? \n¿Le resulta difícil controlar pensamientos negativos o la sensación de tensión constante? \n¿Siente que los métodos que ha probado no le han dado un alivio suficiente?",
-  implicacion:"¿Qué impacto tendría seguir con estos niveles de ansiedad o tristeza en su salud física y emocional a largo plazo? \n¿Cómo afectan estos problemas a sus relaciones personales o desempeño laboral? \n¿Ha considerado que la falta de control puede aumentar el riesgo de otros problemas como insomnio, gastritis o hipertensión?",
-  necesidad:"¿Le interesaría un enfoque complementario que ayude a relajar el sistema nervioso y equilibrar las emociones de manera natural? \n¿Qué valor tendría para usted recuperar calma, motivación y energía sin efectos secundarios significativos? \n¿Le gustaría explorar cómo la acupuntura puede apoyar la reducción del estrés y favorecer un estado de bienestar integral?",
-  ),
-  Sintoma//arreglar
-  (
-  nombre:"Hashimoto / Hipotiroidismo / Hipertiroidismo/ Tiroiditis / Tiroides",
-  categoria:"Clinico",
-  imagen:"assets/images/controlpeso.jpeg",
-  descripcion:"Cambios en el estado de ánimo o dificultad para manejar las emociones.",
-  comoayuda:"La acupuntura ayudara a equilibrar el sistema nervioso, reducir la tensión y favorecer la calma interior, lo que contribuye a manejar mejor las emociones y recuperar el bienestar emocional.",
-  situacion:"¿Desde cuándo siente cambios en su estado de ánimo o dificultad para manejar las emociones? \n¿Ha probado algún tratamiento médico, terapia o técnicas de relajación? \n¿En qué momentos del día o situaciones nota más intensos los síntomas emocionales?",
-  problema:"¿Ha notado que estos problemas emocionales afectan su concentración, sueño o energía diaria? \n¿Le resulta difícil controlar pensamientos negativos o la sensación de tensión constante? \n¿Siente que los métodos que ha probado no le han dado un alivio suficiente?",
-  implicacion:"¿Qué impacto tendría seguir con estos niveles de ansiedad o tristeza en su salud física y emocional a largo plazo? \n¿Cómo afectan estos problemas a sus relaciones personales o desempeño laboral? \n¿Ha considerado que la falta de control puede aumentar el riesgo de otros problemas como insomnio, gastritis o hipertensión?",
-  necesidad:"¿Le interesaría un enfoque complementario que ayude a relajar el sistema nervioso y equilibrar las emociones de manera natural? \n¿Qué valor tendría para usted recuperar calma, motivación y energía sin efectos secundarios significativos? \n¿Le gustaría explorar cómo la acupuntura puede apoyar la reducción del estrés y favorecer un estado de bienestar integral?",
-  ),
+  Sintoma(
+  nombre: "Fasciitis Plantar",
+  categoria: "Dolor",
+  imagen: "assets/images/plantar.jpeg",
+  descripcion: "Dolor en la planta del pie que dificulta caminar o estar de pie.",
+  comoayuda: "La acupuntura ayuda a reducir la inflamación, mejorar la circulación y relajar la tensión en la fascia plantar, favoreciendo la recuperación y disminuyendo el dolor.",
+  situacion: "¿Desde cuándo siente dolor en la planta del pie al caminar o estar de pie? \n¿En qué momentos del día se intensifica más el dolor?",
+  problema: "¿Le resulta difícil realizar actividades cotidianas como caminar largas distancias o estar mucho tiempo de pie? \n¿Ha probado tratamientos como plantillas, masajes o medicamentos sin obtener alivio suficiente?",
+  implicacion: "¿Qué impacto tendría seguir con este dolor en su movilidad y calidad de vida? \n¿Podría limitar su capacidad de trabajar, hacer ejercicio o disfrutar actividades sociales?",
+  necesidad: "¿Le interesaría un enfoque complementario como la acupuntura para reducir el dolor y mejorar la movilidad de manera natural? \n¿Qué valor tendría para usted recuperar la capacidad de caminar sin molestias?",
+),
+
+Sintoma(
+  nombre: "Migraña",
+  categoria: "Neurológico",
+  imagen: "assets/images/migrana.jpeg",
+  descripcion: "Dolor de cabeza intenso acompañado de sensibilidad a la luz, náusea o visión borrosa.",
+  comoayuda: "La acupuntura ayuda a regular el sistema nervioso, disminuir la tensión muscular y reducir la frecuencia e intensidad de las crisis de migraña.",
+  situacion: "¿Desde cuándo experimenta episodios de migraña? \n¿Con qué frecuencia aparecen y cuánto duran?",
+  problema: "¿Le impiden las migrañas realizar sus actividades diarias o laborales? \n¿Ha probado medicamentos o terapias sin lograr un alivio suficiente?",
+  implicacion: "¿Qué consecuencias tendría seguir con crisis recurrentes en su desempeño laboral, descanso y vida personal? \n¿Podría aumentar el riesgo de ansiedad, insomnio o depresión?",
+  necesidad: "¿Le interesaría un tratamiento complementario como la acupuntura para disminuir la frecuencia e intensidad de las migrañas? \n¿Qué valor tendría para usted recuperar energía y concentración sin depender tanto de medicamentos?",
+),
+
+Sintoma(
+  nombre: "Tiroides (Hashimoto / Hipotiroidismo / Hipertiroidismo / Tiroiditis)",
+  categoria: "Clínico",
+  imagen: "assets/images/tiroides.jpeg",
+  descripcion: "Alteraciones en la función de la glándula tiroides que afectan el metabolismo, energía y bienestar general.",
+  comoayuda: "La acupuntura ayuda a equilibrar el sistema endocrino, mejorar la energía y reducir síntomas como fatiga, ansiedad o cambios de peso.",
+  situacion: "¿Desde cuándo presenta síntomas relacionados con la tiroides como cansancio, cambios de peso o alteraciones en el ánimo?",
+  problema: "¿Le resulta difícil mantener energía estable durante el día? \n¿Ha notado que los tratamientos médicos no controlan completamente los síntomas?",
+  implicacion: "¿Qué impacto tendría seguir con desequilibrios hormonales en su salud física y emocional a largo plazo? \n¿Podría afectar su rendimiento laboral, relaciones o bienestar general?",
+  necesidad: "¿Le interesaría un enfoque complementario como la acupuntura para apoyar el equilibrio hormonal y mejorar su calidad de vida? \n¿Qué valor tendría para usted recuperar energía y estabilidad emocional?",
+),
+
+Sintoma(
+  nombre: "Fibromialgia",
+  categoria: "Clínico",
+  imagen: "assets/images/fibromialgia.jpeg",
+  descripcion: "Dolor crónico generalizado acompañado de fatiga y alteraciones del sueño.",
+  comoayuda: "La acupuntura ayuda a disminuir el dolor, relajar la musculatura y mejorar la calidad del sueño en pacientes con fibromialgia.",
+  situacion: "¿Desde cuándo siente dolor generalizado en músculos y articulaciones? \n¿En qué momentos del día se intensifica más?",
+  problema: "¿Le resulta difícil descansar adecuadamente o mantener energía durante el día? \n¿Ha probado medicamentos o terapias sin obtener alivio suficiente?",
+  implicacion: "¿Qué consecuencias tendría seguir con dolor crónico en su vida personal y laboral? \n¿Podría aumentar el riesgo de depresión, ansiedad o aislamiento social?",
+  necesidad: "¿Le interesaría un enfoque complementario como la acupuntura para reducir el dolor y mejorar el descanso? \n¿Qué valor tendría para usted recuperar bienestar y energía para sus actividades diarias?",
+),
+
 ];

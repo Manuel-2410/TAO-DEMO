@@ -13,12 +13,13 @@ final List<FlowNode> flowNodes = [
   FlowNode(
     id: 'mensaje',
     titulo: 'MENSAJE\nENTRANTE',
-    descripcion: 'El lead inicia el contacto por un canal digital.',
+    descripcion: 'El lead inicia el contacto',
     posicion: const Offset(18, 82),
     size: const Size(150, 70),
     tipo: FlowNodeType.accion,
     color: clienteColor,
-    mostrarReferencia: false,
+    mostrarReferencia: true,
+    referenciaImagen: 'assets/referencias/mensaje_entrante.png',
   ),
   FlowNode(
     id: 'fuentes',
@@ -29,6 +30,8 @@ final List<FlowNode> flowNodes = [
     size: const Size(150, 124),
     tipo: FlowNodeType.informacion,
     color: clienteColor,
+    mostrarReferencia: true,
+    referenciaImagen: 'assets/referencias/fuentes.png',
   ),
   FlowNode(
     id: 'llamada',
@@ -50,6 +53,8 @@ final List<FlowNode> flowNodes = [
     size: const Size(150, 120),
     tipo: FlowNodeType.informacion,
     color: interesColor,
+     mostrarReferencia: true,
+    referenciaImagen: 'assets/referencias/inmediata.png',
   ),
   FlowNode(
     id: 'ignorancia',
@@ -103,16 +108,20 @@ final List<FlowNode> flowNodes = [
     size: const Size(145, 120),
     tipo: FlowNodeType.informacion,
     color: manejoColor,
+    mostrarReferencia: true,
+    referenciaImagen: 'assets/referencias/encasillar.png',
   ),
   FlowNode(
     id: 'brindar',
     titulo: '',
-    descripcion: 'Entregar contexto sencillo para resolver las primeras dudas.',
+    descripcion: 'Utilizar beneficios y tratamiento recomendado para reforzar la propuesta.',
     elementos: const ['Brindar información', 'Método SPIN'],
     posicion: const Offset(446, 286),
     size: const Size(145, 118),
     tipo: FlowNodeType.informacion,
     color: manejoColor,
+    mostrarReferencia: true,
+    referenciaImagen: 'assets/referencias/brindar.png',
   ),
   FlowNode(
     id: 'lead_dificil',
@@ -169,6 +178,8 @@ final List<FlowNode> flowNodes = [
     size: const Size(150, 150),
     tipo: FlowNodeType.decision,
     color: seguimientoColor,
+    mostrarReferencia: true,
+    referenciaImagen: 'assets/referencias/respuesta.png',
   ),
   FlowNode(
     id: 'mensaje_personalizado',
@@ -180,6 +191,8 @@ final List<FlowNode> flowNodes = [
     size: const Size(150, 150),
     tipo: FlowNodeType.decision,
     color: seguimientoColor,
+    mostrarReferencia: true,
+    referenciaImagen: 'assets/referencias/personalizado.png',
   ),
   FlowNode(
     id: 'mensaje_contexto',
@@ -190,6 +203,8 @@ final List<FlowNode> flowNodes = [
     size: const Size(150, 150),
     tipo: FlowNodeType.decision,
     color: seguimientoColor,
+    mostrarReferencia: true,
+    referenciaImagen: 'assets/referencias/contexto.png',
   ),
   FlowNode(
     id: 'confirmacion',
@@ -200,6 +215,8 @@ final List<FlowNode> flowNodes = [
     size: const Size(145, 120),
     tipo: FlowNodeType.informacion,
     color: agendadoColor,
+    mostrarReferencia: true,
+    referenciaImagen: 'assets/referencias/agendado.png',
   ),
 ];
 

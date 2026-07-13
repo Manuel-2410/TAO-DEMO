@@ -7,7 +7,7 @@ final mensajesContactoInicial = [
     titulo: "Sin información (sobre el video)",
 
     mensaje:
-        "Buen día, me comunico de TAO ACUPUNTURA y le estaré brindando la información. \nPara orientarte de la mejor manera, cuéntame, ¿Que situación o sintoma presentas?",
+        "Buen día. Con acupuntura podemos ayudarte con síntomas o enfermedades diagnosticadas.\nPara orientarte de la mejor manera, cuéntame, ¿qué situación o síntoma presentas?",
   ),
 
   MensajeModel//2
@@ -15,21 +15,21 @@ final mensajesContactoInicial = [
     titulo: "Sin información (sin video de referencia)",
 
     mensaje:
-        "Buen día, me comunico de TAO ACUPUNTURA y le estaré brindando la información. \n ¿Podría brindarme los síntomas por los que viene? De esta forma podré brindarle el tratamiento de forma adecuada.",
+        "Buen día. ¿Podría brindarme los síntomas por los que viene?\nDe esta forma, podré brindarle el tratamiento adecuado.",
   ),
   MensajeModel//3
   (
     titulo: "Con sintomas específicos (sobre el video)",
 
     mensaje:
-        "Buen día, me comunico de TAO ACUPUNTURA y le estaré brindando la información. \n¿Podría comentarme desde hace cuánto tiempo presenta estos síntomas?",
+        "Buen día,\n¿Podría comentarme desde hace cuánto tiempo presenta estos síntomas?",
   ),
   MensajeModel//4
   (
     titulo: "PRECIO / COSTO DE SESIÓN",
 
     mensaje:
-        "Buen día, me comunico de TAO ACUPUNTURA y le estaré brindando la información. \nNuestros precios varían entre los tratamientos que ofrecemos. \n¿Podría brindarme los síntomas por los que viene? De esta forma podré brindarle el tratamiento adecuado para usted y su precio.",
+        "Buen día. \nNuestros precios varían entre los tratamientos que ofrecemos. \n¿Podría brindarme los síntomas por los que viene? De esta forma podré brindarle el tratamiento adecuado para usted y su precio.",
   ),
   MensajeModel//5
   (
