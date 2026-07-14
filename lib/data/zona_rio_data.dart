@@ -11,7 +11,7 @@ final tratamientosZonaRio = [
         "assets/images/acupuntura2.png",
 
     descripcion:
-        "Sesiones basado en diagnóstico clínico y plan terapéutico. La primera sesión incluye diagnóstico (90 min) y las subsecuentes duran 60 min. Esta fase prepara el cuerpo para etapas posteriores de fortalecimiento.",
+        "Sesiones basado en diagnóstico clínico y plan terapéutico. La primera sesión dura 90 min y las subsecuentes duran 60 min. Esta fase prepara el cuerpo para etapas posteriores de fortalecimiento.",
 
     beneficios:
         "•Reduce el dolor y mejora el bienestar. \n•Relaja los músculos y disminuye la tensión. \n• Disminuye la inflamación y favorece la recuperación. \n•Apoya el sistema inmunológico fortaleciendo defensas naturales. \n•Complementa otros tratamientos médicos y fisioterapéuticos. \n•Reduce el estrés y la ansiedad. \n•Favorece el sueño y la relajación profunda. \n•Estimula y fortalece nervios, músculos y tendones.",
