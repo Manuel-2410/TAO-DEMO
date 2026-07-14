@@ -1,8 +1,44 @@
 import 'package:flutter/material.dart';
 
 import '../models/tratamiento.dart';
+import 'package:share_plus/share_plus.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class TratamientoDetailCard extends StatelessWidget {
+      Future<void> abrirWhatsapp() async {
+
+      final mensaje = Uri.encodeComponent(
+          "Hola, me interesa el tratamiento ${tratamiento.titulo}. ¿Podrían brindarme más información?");
+
+      final url = Uri.parse(
+          "https://wa.me/526642511108?text=$mensaje");
+
+      await launchUrl(
+        url,
+        mode: LaunchMode.externalApplication,
+      );
+    }
+    void compartir() {
+
+      Share.share("""
+
+    ${tratamiento.titulo}
+
+    ${tratamiento.descripcion}
+
+    Beneficios
+
+    ${tratamiento.beneficios}
+
+    Inversión
+
+    ${tratamiento.pagos}
+
+    TAO Acupuntura
+
+    """);
+
+    }
 
   final Tratamiento tratamiento;
 
@@ -111,7 +147,7 @@ class TratamientoDetailCard extends StatelessWidget {
               children: [
 
                 FilledButton.icon(
-                  onPressed: () {},
+                onPressed: abrirWhatsapp,
 
                   icon:
                       const Icon(Icons.chat),
@@ -123,7 +159,7 @@ class TratamientoDetailCard extends StatelessWidget {
                 const SizedBox(width: 15),
 
                 OutlinedButton.icon(
-                  onPressed: () {},
+                onPressed: compartir,
 
                   icon:
                       const Icon(Icons.share),

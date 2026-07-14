@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-
+import 'package:flutter/services.dart';
 import '../models/video_model.dart';
 
 class VideoCard extends StatelessWidget {
@@ -44,6 +44,40 @@ class VideoCard extends StatelessWidget {
                     icon: const Icon(Icons.play_arrow),
                     label: const Text("Ver Video"),
                   ),
+                  const SizedBox(height: 10),
+
+            OutlinedButton.icon(
+              onPressed: () async {
+
+                await Clipboard.setData(
+                  ClipboardData(
+                    text: video.url,
+                  ),
+                );
+
+                if (context.mounted) {
+
+                  ScaffoldMessenger.of(context).showSnackBar(
+
+                    const SnackBar(
+                      content: Text(
+                        "Enlace copiado al portapapeles",
+                      ),
+                      duration: Duration(seconds: 2),
+                    ),
+
+                  );
+
+                }
+
+              },
+
+              icon: const Icon(Icons.copy),
+
+              label: const Text(
+                "Copiar enlace",
+              ),
+            ),
                 ],
               ),
             );

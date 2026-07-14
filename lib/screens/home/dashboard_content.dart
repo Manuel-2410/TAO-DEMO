@@ -86,7 +86,7 @@ class DashboardContent extends StatelessWidget {
                 crossAxisSpacing: 20,
                 mainAxisSpacing: 20,
 
-                childAspectRatio: 1.2,
+                childAspectRatio: 1.55,
 
                 children: [
                   DashboardCard(
