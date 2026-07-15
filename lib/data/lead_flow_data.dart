@@ -284,7 +284,7 @@ const List<FlowConnection> flowConnections = [
   FlowConnection(
     desde: 'porque',
     hacia: 'respuesta_inmediata',
-    etiqueta: 'Miedo\nsolo\nun\nmensaje',
+    etiqueta: 'Mando\nsolo\nun\nmensaje',
     posicionEtiqueta: Offset(884, 340),
   ),
   FlowConnection(
