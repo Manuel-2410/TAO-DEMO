@@ -19,7 +19,6 @@ Inversión
 
 ${tratamiento.pagos}
 
-TAO Acupuntura
 """;
 
   Future<void> abrirWhatsapp() async {
