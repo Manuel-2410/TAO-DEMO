@@ -5,64 +5,51 @@ import 'package:share_plus/share_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class TratamientoDetailCard extends StatelessWidget {
-      Future<void> abrirWhatsapp() async {
+  String get plantillaTratamiento =>
+      """
+${tratamiento.titulo}
 
-      final mensaje = Uri.encodeComponent(
-          "Hola, me interesa el tratamiento ${tratamiento.titulo}. ¿Podrían brindarme más información?");
+${tratamiento.descripcion}
 
-      final url = Uri.parse(
-          "https://wa.me/526642511108?text=$mensaje");
+Beneficios
 
-      await launchUrl(
-        url,
-        mode: LaunchMode.externalApplication,
-      );
-    }
-    void compartir() {
+${tratamiento.beneficios}
 
-      Share.share("""
+Inversión
 
-    ${tratamiento.titulo}
+${tratamiento.pagos}
 
-    ${tratamiento.descripcion}
+TAO Acupuntura
+""";
 
-    Beneficios
+  Future<void> abrirWhatsapp() async {
+    final mensaje = Uri.encodeComponent(plantillaTratamiento);
 
-    ${tratamiento.beneficios}
+    final url = Uri.parse("https://wa.me/526642511108?text=$mensaje");
 
-    Inversión
+    await launchUrl(url, mode: LaunchMode.externalApplication);
+  }
 
-    ${tratamiento.pagos}
-
-    TAO Acupuntura
-
-    """);
-
-    }
+  void compartir() {
+    Share.share(plantillaTratamiento);
+  }
 
   final Tratamiento tratamiento;
 
-  const TratamientoDetailCard({
-    super.key,
-    required this.tratamiento,
-  });
+  const TratamientoDetailCard({super.key, required this.tratamiento});
 
   @override
   Widget build(BuildContext context) {
-
     return Card(
       child: Padding(
         padding: const EdgeInsets.all(24),
 
         child: Column(
-          crossAxisAlignment:
-              CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
 
           children: [
-
             ClipRRect(
-              borderRadius:
-                  BorderRadius.circular(20),
+              borderRadius: BorderRadius.circular(20),
 
               child: Image.asset(
                 tratamiento.icono,
@@ -80,11 +67,7 @@ class TratamientoDetailCard extends StatelessWidget {
             Text(
               tratamiento.titulo,
 
-              style: const TextStyle(
-                fontSize: 32,
-                fontWeight:
-                    FontWeight.bold,
-              ),
+              style: const TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
             ),
 
             const SizedBox(height: 20),
@@ -92,80 +75,57 @@ class TratamientoDetailCard extends StatelessWidget {
             const Text(
               "Descripción",
 
-              style: TextStyle(
-                fontSize: 22,
-                fontWeight:
-                    FontWeight.bold,
-              ),
+              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
             ),
 
             const SizedBox(height: 10),
 
-            Text(
-              tratamiento.descripcion,
-            ),
+            Text(tratamiento.descripcion),
 
             const SizedBox(height: 25),
 
             const Text(
               "Beneficios",
 
-              style: TextStyle(
-                fontSize: 22,
-                fontWeight:
-                    FontWeight.bold,
-              ),
+              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
             ),
 
             const SizedBox(height: 10),
 
-            Text(
-              tratamiento.beneficios,
-            ),
+            Text(tratamiento.beneficios),
 
             const SizedBox(height: 25),
 
             const Text(
               "Inversión",
 
-              style: TextStyle(
-                fontSize: 22,
-                fontWeight:
-                    FontWeight.bold,
-              ),
+              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
             ),
 
             const SizedBox(height: 10),
 
-            Text(
-              tratamiento.pagos,
-            ),
+            Text(tratamiento.pagos),
 
             const SizedBox(height: 30),
 
             Row(
               children: [
-
                 FilledButton.icon(
-                onPressed: abrirWhatsapp,
+                  onPressed: abrirWhatsapp,
 
-                  icon:
-                      const Icon(Icons.chat),
+                  icon: const Icon(Icons.chat),
 
-                  label:
-                      const Text("WhatsApp"),
+                  label: const Text("WhatsApp"),
                 ),
 
                 const SizedBox(width: 15),
 
                 OutlinedButton.icon(
-                onPressed: compartir,
+                  onPressed: compartir,
 
-                  icon:
-                      const Icon(Icons.share),
+                  icon: const Icon(Icons.share),
 
-                  label:
-                      const Text("Compartir"),
+                  label: const Text("Compartir"),
                 ),
               ],
             ),

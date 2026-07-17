@@ -1,18 +1,19 @@
-# tao
+# TAO Enterprise
 
-A new Flutter project.
+ERP Clínico desarrollado para TAO.
 
-## Getting Started
+Estado:
 
-This project is a starting point for a Flutter application.
+En desarrollo.
 
-A few resources to get you started if this is your first Flutter project:
+Versión actual:
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+v1.0 Baseline
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Arquitectura:
 
+En construcción.
+
+Documentación:
+
+Disponible en /docs
