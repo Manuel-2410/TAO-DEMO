@@ -63,7 +63,7 @@ final tratamientosZonaRio = [
         "assets/images/ventosas.png",
 
     descripcion:
-        "Tratamiento estético–terapéutico que estimula puntos faciales y musculares con agujas finas. \nFavorece la regeneración celular, mejora la circulación y tonifica la piel de manera natural, sin procedimientos invasivos.",
+        "Terapia que utiliza ventosas para crear succión en la piel, promoviendo la circulación sanguínea y linfática, aliviando la tensión muscular y estimulando el sistema nervioso. Es una técnica complementaria que potencia los efectos de otros tratamientos.",
 
     beneficios:
         "• Libera tensión muscular \n• Mejora la circulación y oxigenación \n• Elimina toxinas y reduce inflamación \n• Relaja profundamente el sistema nervioso",

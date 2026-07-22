@@ -49,6 +49,7 @@ class FlowConnection {
   final String desde;
   final String hacia;
   final String? etiqueta;
+  final String descripcion;
   final Color color;
   final FlowAnchor salida;
   final FlowAnchor entrada;
@@ -58,6 +59,7 @@ class FlowConnection {
   const FlowConnection({
     required this.desde,
     required this.hacia,
+    required this.descripcion,
     this.etiqueta,
     this.color = const Color(0xFF27332D),
     this.salida = FlowAnchor.right,

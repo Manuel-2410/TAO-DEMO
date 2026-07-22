@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-
-import '../models/tratamiento.dart';
+import 'package:flutter/services.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
+
+import '../models/tratamiento.dart';
 
 class TratamientoDetailCard extends StatelessWidget {
   String get plantillaTratamiento =>
@@ -31,6 +32,21 @@ ${tratamiento.pagos}
 
   void compartir() {
     Share.share(plantillaTratamiento);
+  }
+
+  Future<void> copiarTodo(BuildContext context) async {
+    await Clipboard.setData(ClipboardData(text: plantillaTratamiento));
+
+    if (!context.mounted) return;
+
+    ScaffoldMessenger.of(context)
+      ..hideCurrentSnackBar()
+      ..showSnackBar(
+        const SnackBar(
+          content: Text('Información del tratamiento copiada'),
+          duration: Duration(seconds: 2),
+        ),
+      );
   }
 
   final Tratamiento tratamiento;
@@ -107,24 +123,24 @@ ${tratamiento.pagos}
 
             const SizedBox(height: 30),
 
-            Row(
+            Wrap(
+              spacing: 15,
+              runSpacing: 10,
               children: [
                 FilledButton.icon(
                   onPressed: abrirWhatsapp,
-
                   icon: const Icon(Icons.chat),
-
                   label: const Text("WhatsApp"),
                 ),
-
-                const SizedBox(width: 15),
-
                 OutlinedButton.icon(
                   onPressed: compartir,
-
                   icon: const Icon(Icons.share),
-
                   label: const Text("Compartir"),
+                ),
+                OutlinedButton.icon(
+                  onPressed: () => copiarTodo(context),
+                  icon: const Icon(Icons.copy_all_outlined),
+                  label: const Text('Copiar todo'),
                 ),
               ],
             ),
