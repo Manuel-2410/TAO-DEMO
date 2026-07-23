@@ -10,12 +10,13 @@ class FlowDetailPanel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colors = Theme.of(context).colorScheme;
     return Container(
       width: 285,
       constraints: const BoxConstraints(maxHeight: 560),
       decoration: BoxDecoration(
-        color: Colors.white,
-        border: Border.all(color: const Color(0xFFE0E5EA)),
+        color: colors.surfaceContainer,
+        border: Border.all(color: colors.outlineVariant),
         borderRadius: BorderRadius.circular(14),
         boxShadow: const [
           BoxShadow(

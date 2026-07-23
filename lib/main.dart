@@ -7,46 +7,35 @@ import 'screens/home/main_screen.dart';
 import 'theme/app_theme.dart';
 import 'data/lead_flow_data.dart';
 
-
-
 void main() {
   runApp(
     MultiProvider(
       providers: [
+        ChangeNotifierProvider(create: (_) => NavigationProvider()),
 
-        ChangeNotifierProvider(
-          create: (_) =>
-              NavigationProvider(),
-        ),
-
-        ChangeNotifierProvider(
-          create: (_) =>
-              ThemeProvider(),
-        ),
-        ChangeNotifierProvider(
-          create: (_) => FlowProvider(
-            flowNodes,
-          ),
-        ),
+        ChangeNotifierProvider(create: (_) => ThemeProvider()),
+        ChangeNotifierProvider(create: (_) => FlowProvider(flowNodes)),
       ],
-  
+
       child: const TaoApp(),
     ),
   );
 }
-
 
 class TaoApp extends StatelessWidget {
   const TaoApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'TAO Acupuntura',
-      debugShowCheckedModeBanner: false,
-      theme: AppTheme.lightTheme,
-      home: const MainScreen(),
+    return Consumer<ThemeProvider>(
+      builder: (context, themeProvider, child) => MaterialApp(
+        title: 'TAO Acupuntura',
+        debugShowCheckedModeBanner: false,
+        theme: AppTheme.lightTheme,
+        darkTheme: AppTheme.darkTheme,
+        themeMode: themeProvider.themeMode,
+        home: const MainScreen(),
+      ),
     );
   }
 }
-

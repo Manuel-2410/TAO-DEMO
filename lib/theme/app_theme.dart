@@ -9,41 +9,43 @@ class AppTheme {
 
   static const Color cardColor = Colors.white;
 
-  static ThemeData lightTheme = ThemeData(
-    useMaterial3: true,
+  static ThemeData lightTheme = _theme(Brightness.light);
 
-    scaffoldBackgroundColor: background,
+  static ThemeData darkTheme = _theme(Brightness.dark);
 
-    colorScheme: ColorScheme.fromSeed(
+  static ThemeData _theme(Brightness brightness) {
+    final isDark = brightness == Brightness.dark;
+    final scheme = ColorScheme.fromSeed(
       seedColor: primary,
-    ),
+      brightness: brightness,
+    );
 
-    appBarTheme: const AppBarTheme(
-      centerTitle: true,
-      elevation: 0,
-      backgroundColor: Colors.transparent,
-      foregroundColor: Colors.black,
-    ),
-
-    cardTheme: CardThemeData(
-      color: cardColor,
-
-      elevation: 3,
-
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(20),
+    return ThemeData(
+      useMaterial3: true,
+      brightness: brightness,
+      colorScheme: scheme,
+      scaffoldBackgroundColor: isDark ? const Color(0xFF101512) : background,
+      canvasColor: isDark ? const Color(0xFF101512) : background,
+      appBarTheme: AppBarTheme(
+        centerTitle: true,
+        elevation: 0,
+        backgroundColor: Colors.transparent,
+        foregroundColor: scheme.onSurface,
       ),
-    ),
-
-    inputDecorationTheme: InputDecorationTheme(
-      filled: true,
-
-      fillColor: Colors.white,
-
-      border: OutlineInputBorder(
-        borderRadius:
-            BorderRadius.circular(15),
+      cardTheme: CardThemeData(
+        color: isDark ? const Color(0xFF1A211D) : cardColor,
+        elevation: 3,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
       ),
-    ),
-  );
+      inputDecorationTheme: InputDecorationTheme(
+        filled: true,
+        fillColor: isDark ? const Color(0xFF202923) : Colors.white,
+        border: OutlineInputBorder(borderRadius: BorderRadius.circular(15)),
+      ),
+      dialogTheme: DialogThemeData(
+        backgroundColor: isDark ? const Color(0xFF1A211D) : Colors.white,
+      ),
+      dividerColor: isDark ? const Color(0xFF3A463E) : const Color(0xFFE0E5EA),
+    );
+  }
 }

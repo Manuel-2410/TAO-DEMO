@@ -50,6 +50,7 @@ class _StandardCardState extends State<_StandardCard> {
   Widget build(BuildContext context) {
     final isAction = widget.node.tipo == FlowNodeType.accion;
     final isLeadDificil = widget.node.tipo == FlowNodeType.imagen;
+    final colors = Theme.of(context).colorScheme;
     return Stack(
       clipBehavior: Clip.none,
       children: [
@@ -78,7 +79,7 @@ class _StandardCardState extends State<_StandardCard> {
                           widget.node.color.withValues(
                             alpha: isLeadDificil ? .10 : .06,
                           ),
-                          Colors.white,
+                          colors.surfaceContainerLowest,
                         ),
                   borderRadius: BorderRadius.circular(isAction ? 36 : 11),
                   border: isAction
@@ -235,7 +236,9 @@ class _NodeContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final textColor = isAction ? Colors.white : const Color(0xFF111827);
+    final textColor = isAction
+        ? Colors.white
+        : Theme.of(context).colorScheme.onSurface;
     final alignment = isAction ? Alignment.center : Alignment.centerLeft;
 
     return LayoutBuilder(

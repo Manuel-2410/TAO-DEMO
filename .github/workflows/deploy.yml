@@ -27,7 +27,7 @@ jobs:
 
       - run: flutter pub get
 
-      - run: flutter build web --release --base-href "/TAO-DEMO/"
+      - run: flutter build web --release --base-href "/tao-foundation/"
 
       - uses: actions/upload-pages-artifact@v3
         with:

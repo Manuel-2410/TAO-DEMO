@@ -57,8 +57,9 @@ class _ProcesoLeadScreenState extends State<ProcesoLeadScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final colors = Theme.of(context).colorScheme;
     return ColoredBox(
-      color: const Color(0xFFF7F9FC),
+      color: colors.surface,
       child: SafeArea(
         child: Padding(
           padding: const EdgeInsets.fromLTRB(24, 20, 24, 14),
@@ -81,11 +82,9 @@ class _ProcesoLeadScreenState extends State<ProcesoLeadScreen> {
                         Positioned.fill(
                           child: DecoratedBox(
                             decoration: BoxDecoration(
-                              color: Colors.white,
+                              color: colors.surfaceContainerLowest,
                               borderRadius: BorderRadius.circular(8),
-                              border: Border.all(
-                                color: const Color(0xFFE1E6EC),
-                              ),
+                              border: Border.all(color: colors.outlineVariant),
                               boxShadow: const [
                                 BoxShadow(
                                   color: Color(0x0D000000),
@@ -285,13 +284,16 @@ class _Header extends StatelessWidget {
     );
   }
 
-  static final ButtonStyle _buttonStyle = OutlinedButton.styleFrom(
-    foregroundColor: const Color(0xFF1D2733),
-    backgroundColor: Colors.white,
-    side: const BorderSide(color: Color(0xFFDDE2E8)),
-    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 15),
-    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-  );
+  static ButtonStyle buttonStyle(BuildContext context) {
+    final colors = Theme.of(context).colorScheme;
+    return OutlinedButton.styleFrom(
+      foregroundColor: colors.onSurface,
+      backgroundColor: colors.surfaceContainerLow,
+      side: BorderSide(color: colors.outlineVariant),
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 15),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+    );
+  }
 }
 
 class _HeaderTitle extends StatelessWidget {
@@ -299,22 +301,23 @@ class _HeaderTitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    final colors = Theme.of(context).colorScheme;
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
           'PROCESO DE LEAD',
           style: TextStyle(
-            color: Color(0xFF124B32),
+            color: colors.primary,
             fontSize: 26,
             fontWeight: FontWeight.w800,
             letterSpacing: -.5,
           ),
         ),
-        SizedBox(height: 4),
+        const SizedBox(height: 4),
         Text(
           'Manual De La Cruz  |  Junio 29, 2023',
-          style: TextStyle(color: Color(0xFF68717C), fontSize: 14),
+          style: TextStyle(color: colors.onSurfaceVariant, fontSize: 14),
         ),
       ],
     );
@@ -347,14 +350,14 @@ class _HeaderControls extends StatelessWidget {
           onPressed: onReset,
           icon: const Icon(Icons.control_camera_outlined, size: 18),
           label: const Text('Restablecer vista'),
-          style: _Header._buttonStyle,
+          style: _Header.buttonStyle(context),
         ),
         const SizedBox(width: 10),
         OutlinedButton.icon(
           onPressed: onLegend,
           icon: const Icon(Icons.list, size: 19),
           label: const Text('Ver leyenda'),
-          style: _Header._buttonStyle,
+          style: _Header.buttonStyle(context),
         ),
       ],
     );
@@ -374,11 +377,12 @@ class _ZoomDisplay extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colors = Theme.of(context).colorScheme;
     return Container(
       height: 46,
       decoration: BoxDecoration(
-        color: Colors.white,
-        border: Border.all(color: const Color(0xFFDDE2E8)),
+        color: colors.surfaceContainerLow,
+        border: Border.all(color: colors.outlineVariant),
         borderRadius: BorderRadius.circular(8),
       ),
       child: Row(
@@ -417,12 +421,13 @@ class _VerticalZoomControls extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colors = Theme.of(context).colorScheme;
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 5),
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: colors.surfaceContainerLow,
         borderRadius: BorderRadius.circular(9),
-        border: Border.all(color: const Color(0xFFE2E6EA)),
+        border: Border.all(color: colors.outlineVariant),
         boxShadow: const [BoxShadow(color: Color(0x17000000), blurRadius: 8)],
       ),
       child: Column(
@@ -460,6 +465,7 @@ class _FlowLegend extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colors = Theme.of(context).colorScheme;
     const items = [
       ('Cliente', clienteColor),
       ('Interés', interesColor),
@@ -486,24 +492,28 @@ class _FlowLegend extends StatelessWidget {
               const SizedBox(width: 7),
               Text(
                 item.$1,
-                style: const TextStyle(
+                style: TextStyle(
                   fontSize: 11.5,
-                  color: Color(0xFF344052),
+                  color: colors.onSurfaceVariant,
                 ),
               ),
             ],
           ),
         ),
-      const Padding(
+      Padding(
         padding: EdgeInsets.symmetric(horizontal: 12, vertical: 5),
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(Icons.image_outlined, size: 17, color: Color(0xFF4A5665)),
-            SizedBox(width: 6),
+            Icon(
+              Icons.image_outlined,
+              size: 17,
+              color: colors.onSurfaceVariant,
+            ),
+            const SizedBox(width: 6),
             Text(
               'Imagen de referencia',
-              style: TextStyle(fontSize: 11.5, color: Color(0xFF344052)),
+              style: TextStyle(fontSize: 11.5, color: colors.onSurfaceVariant),
             ),
           ],
         ),
@@ -513,9 +523,9 @@ class _FlowLegend extends StatelessWidget {
       alignment: Alignment.center,
       padding: const EdgeInsets.symmetric(vertical: 2),
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: colors.surfaceContainerLow,
         borderRadius: BorderRadius.circular(8),
-        border: Border.all(color: const Color(0xFFE2E6EB)),
+        border: Border.all(color: colors.outlineVariant),
       ),
       child: wrap
           ? Wrap(alignment: WrapAlignment.center, children: children)
